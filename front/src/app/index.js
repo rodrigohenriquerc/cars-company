@@ -16,7 +16,17 @@
     catalogView
   );
 
-  const car = new win.Car(addCarController, removeCarController);
+  const loadCarsController = new win.LoadCarsController(
+    carModel,
+    carView,
+    catalogView
+  );
+
+  const car = new win.Car(
+    addCarController,
+    removeCarController,
+    loadCarsController
+  );
 
   const button = doc.querySelector("#button");
 
@@ -25,4 +35,6 @@
 
     car.add();
   });
+
+  car.load();
 })(window, document);

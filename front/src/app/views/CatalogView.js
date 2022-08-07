@@ -8,6 +8,10 @@
       const carElement = doc.querySelector(`#${plateNumber}`);
       doc.querySelector("#catalog").removeChild(carElement);
     };
+
+    loadCarsCatalogElement = (carsElements) => {
+      doc.querySelector("#catalog").innerHTML = carsElements;
+    };
   }
 
   win.CatalogView = CatalogView;

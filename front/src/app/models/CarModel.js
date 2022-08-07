@@ -10,6 +10,11 @@
     removeCar = (plateNumber) => {
       this.cars = this.cars.filter((car) => car.plateNumber !== plateNumber);
     };
+
+    loadCars = (cars) => {
+      this.cars = cars;
+      return this.cars;
+    };
   }
 
   win.CarModel = CarModel;
