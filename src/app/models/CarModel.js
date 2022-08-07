@@ -3,8 +3,12 @@
     cars = [];
 
     addCar = (car) => {
-      this.cars.push(car);
-      return this.cars;
+      this.cars = [...this.cars, car];
+      return car;
+    };
+
+    removeCar = (plateNumber) => {
+      this.cars = this.cars.filter((car) => car.plateNumber !== plateNumber);
     };
   }
 
