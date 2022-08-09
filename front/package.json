@@ -4,9 +4,10 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "yarn start": "livereload ./src"
+    "start": "yarn live-server --port=9090"
   },
-  "dependencies": {
-    "livereload": "^0.9.3"
+  "dependencies": {},
+  "devDependencies": {
+    "live-server": "^1.2.2"
   }
 }
