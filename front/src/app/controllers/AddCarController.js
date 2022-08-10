@@ -19,6 +19,7 @@
       })
         .then((res) => res.json())
         .then((data) => {
+          this.carModel.addCar(car);
           this.formView.clearForm();
           return data;
         })

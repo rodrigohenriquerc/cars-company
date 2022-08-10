@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "yarn live-server --port=9090"
+    "start": "node src"
   },
   "dependencies": {},
   "devDependencies": {

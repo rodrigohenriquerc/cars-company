@@ -18,7 +18,7 @@
           carElementButton.addEventListener("click", (e) => {
             e.preventDefault();
 
-            this.removeCarController.handle(plateNumber);
+            this.remove(plateNumber);
           });
         });
 
@@ -53,9 +53,22 @@
         .handle()
         .then((cars) => {
           this.addEventListener(cars);
+          return cars;
         })
         .catch((err) => {
           console.log("Error loading the cars:", err);
+        });
+    };
+
+    remove = (plateNumber) => {
+      this.removeCarController
+        .handle(plateNumber)
+        .then((data) => {
+          console.log("Car removed.", data);
+          this.load();
+        })
+        .catch((err) => {
+          console.log("Error removing the car:", err);
         });
     };
   }

@@ -8,7 +8,7 @@ const app = express();
 app.use(bodyParser.json());
 app.use(cors());
 
-const cars = [
+let cars = [
   {
     brand: "Chevrolet",
     model: "Ônix",
@@ -36,5 +36,11 @@ app.post("/car", (req, res) => {
   cars.push(car);
   res.send(car);
 });
+
+app.delete("/car/:plateNumber", (req, res) => {
+  const plateNumber = req.params.plateNumber
+  cars = cars.filter(car => car.plateNumber !== plateNumber)
+  res.status(200).send('Carro removido com sucesso.')
+})
 
 app.listen(3000);

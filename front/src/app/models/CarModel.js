@@ -2,6 +2,8 @@
   class CarModel {
     cars = [];
 
+    constructor() {}
+
     addCar = (car) => {
       this.cars = [...this.cars, car];
       return car;
@@ -15,6 +17,8 @@
       this.cars = cars;
       return this.cars;
     };
+
+    checkCars = () => this.cars;
   }
 
   win.CarModel = CarModel;
