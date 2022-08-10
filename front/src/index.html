@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cars Company</title>
+    <link rel="stylesheet" href="./style/reset.css" />
+    <link rel="stylesheet" href="./style/global.css" />
+  </head>
+  <body>
+    <form class="form">
+      <div class="form-input-field">
+        <label for="brand">Marca</label>
+        <input type="text" id="brand" />
+      </div>
+
+      <div class="form-input-field">
+        <label for="model">Modelo</label>
+        <input type="text" id="model" />
+      </div>
+
+      <div class="form-input-field">
+        <label for="year">Ano</label>
+        <input type="text" id="year" />
+      </div>
+
+      <div class="form-input-field">
+        <label for="plate-number">Placa</label>
+        <input type="text" id="plate-number" />
+      </div>
+
+      <div class="form-input-field">
+        <label for="photo">Foto</label>
+        <input type="text" id="photo" />
+      </div>
+
+      <button class="form-button" id="button">Salvar</button>
+    </form>
+    <div class="catalog" id="catalog"></div>
+
+    <script src="./app/views/FormView.js"></script>
+    <script src="./app/views/CarView.js"></script>
+    <script src="./app/views/CatalogView.js"></script>
+    <script src="./app/models/CarModel.js"></script>
+    <script src="./app/controllers/AddCarController.js"></script>
+    <script src="./app/controllers/RemoveCarController.js"></script>
+    <script src="./app/controllers/LoadCarsController.js"></script>
+    <script src="./app/Car.js"></script>
+    <script src="./app/index.js"></script>
+  </body>
+</html>

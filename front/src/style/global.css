@@ -1,0 +1,51 @@
+body {
+  padding: 50px 100px;
+}
+
+.form {
+  display: block;
+  margin-bottom: 50px;
+  width: 200px;
+}
+
+.form-input-field {
+  margin-bottom: 10px;
+}
+
+.form-input-field input {
+  display: block;
+  width: 100%;
+}
+
+.form-button {
+  margin-top: 15px;
+}
+
+.catalog {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.catalog-card {
+  width: 200px;
+  height: 300px;
+  border-radius: 3px;
+  background-color: #e8e8e8;
+  border: 1px solid #000;
+}
+
+.catalog-card-image {
+  width: 100%;
+}
+
+.catalog-card-description {
+}
+
+.catalog-card-description-title {
+}
+
+.catalog-card-description-year {
+}
+
+.catalog-card-description-plate-number {
+}
